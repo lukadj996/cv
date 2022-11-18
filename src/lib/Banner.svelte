@@ -1,4 +1,9 @@
 <script>
+  import emailIcon from "../assets/envelope-regular.svg";
+  let my_date = new Date("1996.06.19");
+  let today = new Date();
+  let diff = new Date(today.getTime() - my_date.getTime());
+  let diff_years = diff.getUTCFullYear() - 1970;
 </script>
 
 <main>
@@ -7,13 +12,17 @@
       <h1>Luka Đorđević</h1>
       <h2>Control Systems Engineer</h2>
       <img class="profile_pic" src="src/assets/profile_pic.png" alt="profile" />
+      <div class="cont">
+        <img src={emailIcon} class="logo" alt="Svelte Logo" />
+        <a href="mailto: lukadj996@gamil.com">lukadj996@gmail.com</a>
+      </div>
     </div>
     <div class="col col-2">
       <p>
-        Hello! I am Luka, born and currently living in Serbia. Welcome to my
-        website where you can see all the past and on-going projects of mine. I
-        studyed Mechanical Engineering with major in Control Systems, but I also
-        focus a lot on Embedded system programming, electronis and hardware
+        Hello! My name is Luka, I am {diff_years} years old, born and living in Serbia.
+        Welcome to my website where you can see all the past and on-going projects
+        of mine. I studyed Mechanical Engineering with major in Control Systems,
+        but I also focus a lot on Embedded system programming, electronis and hardware
         design as well as Web development.
       </p>
     </div>
@@ -21,6 +30,9 @@
 </main>
 
 <style>
+  .logo {
+    width: 24px;
+  }
   p {
     min-width: 300px;
     text-align: justify;
@@ -30,6 +42,7 @@
   }
   .col-2 {
     flex: 3;
+    /* align-self: end; */
   }
   .cont {
     display: flex;
@@ -37,8 +50,6 @@
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    flex: 1 3;
-    /* background-color:green; */
   }
   .col {
     display: flex;
