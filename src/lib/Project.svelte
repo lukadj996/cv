@@ -1,29 +1,21 @@
 <script>
   export let project;
   import Carousel from "svelte-carousel";
-  import { fade } from "svelte/transition";
+  import { fade,fly,scale,slide,blur,draw } from "svelte/transition";
   let isOpen = project.isOpen;
-  const toggle = () => (isOpen = !isOpen);
+  function toggle(){
+    isOpen = !isOpen
+  }
+  function in_end(e){
+     e.target.parentElement.scrollIntoView()
+    }
 </script>
 
-<main>
-  <button on:click={toggle}
-    ><svg
-      style="tran"
-      width="20"
-      height="20"
-      fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      stroke-width="2"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path d="M9 5l7 7-7 7" />
-    </svg>{project.name}</button
+<main class='sve'>
+  <button on:click={toggle}>{#if isOpen}&#9650{:else}&#9660{/if}{project.name}</button
   >
   {#if isOpen}
-    <div transition:fade={{ duration: 300 }} class="cont">
+    <div transition:blur={{ duration: 300 }} on:introstart={in_end} class="cont">
       <div class="col col-1">
         <div class="wrap">
           <Carousel dots={false}>
@@ -57,6 +49,7 @@
 <style>
   table td:first-of-type{
     text-align: right;
+    color:darkorange;
   }
   table td:last-of-type{
     text-align: left;
@@ -64,6 +57,7 @@
   .ts{
     padding: 0px;
     font-weight: bold;
+    color:darkorange;
   }
   .desc {
     min-width: 260px;
@@ -80,13 +74,12 @@
     border: none;
     background: none;
     display: block;
-    color: inherit;
+    
     font-size: 1.5em;
     cursor: pointer;
     margin: 0;
     width: 100%;
-    padding-bottom: 0.3em;
-    padding-top: 0.3em;
+    padding: 0.2em 0px;
     text-align: left;
     -webkit-tap-highlight-color: transparent;
   }
@@ -116,6 +109,7 @@
   main {
     background-color: rgb(89, 89, 89);
     border-radius: 0.5em;
-    margin: 0.5em;
+    margin: 0.5em 0px;
+    padding: 0.5em 0px;
   }
 </style>
