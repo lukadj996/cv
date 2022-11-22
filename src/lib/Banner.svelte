@@ -20,10 +20,8 @@
     <div class="col col-2">
       <p>
         Hello! My name is Luka, I am {diff_years} years old, born and living in Serbia.
-        Welcome to my website where you can see all the past and on-going projects
-        of mine. I studyed Mechanical Engineering with major in Control Systems,
-        but I also focus a lot on Embedded system programming, electronis and hardware
-        design as well as Web development.
+        Welcome to my website, where you can see all the past and ongoing projects of mine.
+        I studied Mechanical Engineering with major in Control Systems, but I also focus a lot on Embedded system programming, electronics and hardware design as well as Web development.
       </p>
     </div>
   </div>

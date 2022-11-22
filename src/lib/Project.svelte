@@ -27,7 +27,7 @@
       </div>
       <div class="col col-2">
         <p class="desc">
-          {project.desc}
+          {@html project.desc}
         </p>
         <div class='ts'>Technologies Summary:</div>
         <table>
