@@ -1,7 +1,8 @@
 <script>
   import emailIcon from "../assets/envelope-regular.svg";
-  import profil_pic_url from "../assets/profile_pic.png";
-  let my_date = new Date("1996.06.19");
+  import profil_pic_url from "../assets/profile_pic3.jpg";
+  // let my_date = new Date("1996.06.19");
+  let my_date = new Date(1996,5,19);
   let today = new Date();
   let diff = new Date(today.getTime() - my_date.getTime());
   let diff_years = diff.getUTCFullYear() - 1970;
@@ -15,7 +16,7 @@
       <img class="profile_pic" src="{profil_pic_url}" alt="profile" />
       <div class="cont">
         <img src={emailIcon} class="logo" alt="Svelte Logo" />
-        <a href="mailto: lukadj996@gamil.com">lukadj996@gmail.com</a>
+        <a href="mailto: lukadj996@gamil.com">contact me</a>
       </div>
     </div>
     <div class="col col-2">
@@ -70,6 +71,7 @@
   }
   .profile_pic {
     width: 200px;
+    border-radius: 50%;
     /* margin-top:2em; */
   }
 </style>

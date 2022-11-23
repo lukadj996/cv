@@ -74,7 +74,7 @@
     border: none;
     background: none;
     display: block;
-    
+    color: rgba(255, 255, 255, 0.87);
     font-size: 1.5em;
     cursor: pointer;
     margin: 0;
