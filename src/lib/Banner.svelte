@@ -1,5 +1,6 @@
 <script>
   import emailIcon from "../assets/envelope-regular.svg";
+  import profil_pic_url from "../assets/profile_pic.png";
   let my_date = new Date("1996.06.19");
   let today = new Date();
   let diff = new Date(today.getTime() - my_date.getTime());
@@ -11,7 +12,7 @@
     <div class="col col-1">
       <h1>Luka Đorđević</h1>
       <h2>Control Systems Engineer</h2>
-      <img class="profile_pic" src="src/assets/profile_pic.png" alt="profile" />
+      <img class="profile_pic" src="{profil_pic_url}" alt="profile" />
       <div class="cont">
         <img src={emailIcon} class="logo" alt="Svelte Logo" />
         <a href="mailto: lukadj996@gamil.com">lukadj996@gmail.com</a>
