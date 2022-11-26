@@ -1,0 +1,17 @@
+dispatch:
+  - url: "cv.lukaluci.com/*"
+    service: cv
+  - url: "www.cv.lukaluci.com/*"
+    service: cv
+  - url: "test.lukaluci.com/*"
+    service: browsertest
+  - url: "www.test.lukaluci.com/*"
+    service: browsertest
+  - url: "pera.lukaluci.com/*"
+    service: pera
+  - url: "www.pera.lukaluci.com/*"
+    service: pera
+  - url: "lukaluci.com/*"
+    service: default
+  - url: "www.lukaluci.com/*"
+    service: default

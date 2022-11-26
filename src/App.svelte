@@ -31,7 +31,7 @@
       imgs: [BT1_url,BT2_url],
     },
     {
-      name: "Solar energy prject",
+      name: "Solar energy project",
       stack: [{val:"GCP",info:"AppEngine hosting, SSL cert, etc."},{val:"Grafana", info:'Data visualization'},{val:"InfluxDB", info:'Time Series database'}, {val:"MCUs",info:'ESP8266 used to read voltage, current, temp, etc.'}],
       desc: "I was always fascinated with renewable energy, especially solar energy. I decided to try and make myself a micro solar plant, just for running some Raspberry Pis as a server, powering security cameras, and other small devices. The goal is to create an off-grid solar-powered server farm for all my future needs, with easy expansion on my mind. One of the requirements I set was to be able to monitor and control the farm remotely. For now, I only have prof of concept done with 4 x 250w panels, connected to few car batteries using Chinese MPPT charging controllers. I was able to power Raspberry Pi, 4G modem, Wi-Fi Cameras and other small devices such as ESP8226, STM32 MCUs for monitoring. Next year I plan to make this at least 3kw with some gel batteries and maybe more durable charging controllers and such.",
       imgs: [
