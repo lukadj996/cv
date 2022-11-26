@@ -16,7 +16,7 @@
       <img class="profile_pic" src="{profil_pic_url}" alt="profile" />
       <div class="cont">
         <img src={emailIcon} class="logo" alt="Svelte Logo" />
-        <a href="mailto: lukadj996@gamil.com">contact me</a>
+        <a href="mailto: lukadj996@gmail.com">contact me</a>
       </div>
     </div>
     <div class="col col-2">
