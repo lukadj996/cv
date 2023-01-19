@@ -1,6 +1,7 @@
 <script>
   import emailIcon from "../assets/envelope-regular.svg";
-  import profil_pic_url from "../assets/profile_pic3.jpg";
+  import profil_pic_url from "../assets/profile_pic.jpg";
+  import profil_pic_200_url from "../assets/profile_pic-200.jpg";
   // let my_date = new Date("1996.06.19");
   let my_date = new Date(1996,5,19);
   let today = new Date();
@@ -13,11 +14,11 @@
     <div class="col col-1">
       <h1>Luka Đorđević</h1>
       <h2>Control Systems Engineer</h2>
-      <img class="profile_pic" src="{profil_pic_url}" alt="profile" />
+      <img class="profile_pic" src="{profil_pic_url}" alt="profile"/>
       <div class="cont">
         <img src={emailIcon} class="logo" alt="Svelte Logo" />
         <a href="mailto: lukadj996@gmail.com">contact me</a>
-      </div>
+      </div>      
     </div>
     <div class="col col-2">
       <p>
