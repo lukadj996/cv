@@ -14,6 +14,8 @@
   import SL2_url from "./assets/SL2.png";
   import KL1_url from "./assets/KL1.png";
   import KL2_url from "./assets/KL2.png";
+  import USB1_url from "./assets/USB1.png";
+  import USB2_url from "./assets/USB2.png";
   let projects = [
     {
       name: "EuRobot Competition",
@@ -43,6 +45,12 @@
       stack: [{val:"HTML+JS+CSS",info:'Basic Web stuff, stylng and JS for buttons, popups, etc.'},{val:"jQuery+Datatables",info:'Making sortable, searchable, filterable table with grouping, etc.'}, {val:"GCP",info:"AppEngine hosting GoLang backend code, SSL cert, load-balancing"},{val:"SQLite",info:"Simple relational DB for storing data and mapping tables"}],
       desc: "One of many failed projects of mine. But still worth mentioning because I invested enough time and learned new things. The main problem was with scraping all the different betting sites for the same game. I needed to make one-to-many mapping table with unique team names, which ended with over 40k rows in SQL table. Then I scraped as much different betting sites and using GCP Google Search API I linked all the different team names to my unique team name. (for e.g. Man. Utd., Manchester United, Manchester United FC, is the same name for one single team). After that, calculating the best odds and finding arbitrage and how much money to place on each outcome to guarantee mathematical profit was simple. Did it work? Yes. Until it didn't, and I lost real money (I was a student at the time, so even a small amount of money was a lot for me.) At the end of a day, The house always wins, and I paid with my time and money to learn this first hand. Betting companies can, even if you placed your bet, change the odds willingly and can give you a choice of accepting new odd or returning your money, which in this case means losing an arbitrage since you are betting on the same game in 3 different betting companies, and changing or withdrawing from one of them breaks the mathematically guaranteed profit, leaving you with a loss.",
       imgs: [KL1_url,KL2_url],
+    },
+    {
+      name: "USB Switcher",
+      stack: [{val:"C/C++",info:'Firmware for STM32 board used as main controller'},{val:"Python",info:'Custom library used to controll this device with Robot Framework'},{val:"JLCPCB",info:'Custom made PCB'}],
+      desc: "This little board is custom made PCB and is used as USB multiplexer or demultiplexer. It uses bluepill (STM32F1) or blackpill (STM32F4) board as a controller and USB switching part is done by TS3USB221. You can send commands to virtual serial port and switch USB device to A or B port. I used it to switch one USB flash drive between two hosts.",
+      imgs: [USB1_url,USB2_url],
     },
   ];
 </script>
