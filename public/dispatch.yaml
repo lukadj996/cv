@@ -1,17 +1,13 @@
 dispatch:
-  - url: "cv.lukaluci.com/*"
+  - url: "cv.lukavps.com/*"
     service: cv
-  - url: "www.cv.lukaluci.com/*"
+  - url: "www.cv.lukavps.com/*"
     service: cv
-  - url: "test.lukaluci.com/*"
+  - url: "test.lukavps.com/*"
     service: browsertest
-  - url: "www.test.lukaluci.com/*"
+  - url: "www.test.lukavps.com/*"
     service: browsertest
-  - url: "pera.lukaluci.com/*"
-    service: pera
-  - url: "www.pera.lukaluci.com/*"
-    service: pera
-  - url: "lukaluci.com/*"
+  - url: "lukavps.com/*"
     service: default
-  - url: "www.lukaluci.com/*"
+  - url: "www.lukavps.com/*"
     service: default
